@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.view.ApptViewController">
+   <children>
+      <VBox layoutX="113.0" layoutY="82.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="100.0" prefWidth="200.0" text="Appointments">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="50.0" prefWidth="100.0">
+               <children>
+                  <ToolBar prefHeight="40.0" prefWidth="200.0">
+                     <items>
+                        <RadioButton mnemonicParsing="false" text="All Appts.">
+                           <padding>
+                              <Insets left="40.0" />
+                           </padding>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="Appts. This Month">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </RadioButton>
+                        <RadioButton mnemonicParsing="false" text="Appts. This Week">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </RadioButton>
+                     </items>
+                  </ToolBar>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="appointmentsTable" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                        <TableColumn fx:id="dateColumn" prefWidth="99.0" text="Date/Time" />
+                      <TableColumn fx:id="nameColumn" prefWidth="73.0" text="Customer" />
+                        <TableColumn fx:id="typeColumn" prefWidth="70.0" text="Type" />
+                        <TableColumn fx:id="locationColumn" prefWidth="109.0" text="Location" />
+                        <TableColumn fx:id="descriptionColumn" prefWidth="148.0" text="Description" />
+                    </columns>
+                  </TableView>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                        <Button mnemonicParsing="false" text="Update" />
+                      <Button mnemonicParsing="false" text="Delete" />
+                        <Button mnemonicParsing="false" onAction="#backBttnPushed" text="Back" />
+                    </buttons>
+                     <StackPane.margin>
+                        <Insets right="10.0" />
+                     </StackPane.margin>
+                  </ButtonBar>
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

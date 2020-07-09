@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.view.ApptAddController">
+   <children>
+      <SplitPane dividerPositions="0.1746987951807229" orientation="VERTICAL" prefHeight="612.0" prefWidth="645.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <StackPane layoutX="234.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label prefHeight="52.0" prefWidth="224.0" text="Add Appointment">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children></StackPane>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <VBox layoutX="192.0" layoutY="66.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <StackPane prefHeight="40.0" prefWidth="498.0">
+                           <children>
+                              <ToolBar prefHeight="56.0" prefWidth="498.0">
+                                 <items>
+                                    <Label prefHeight="28.0" prefWidth="66.0" text="Type: ">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <RadioButton mnemonicParsing="false" text="Face-to-Face">
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="Skype">
+                                       <padding>
+                                          <Insets right="10.0" />
+                                       </padding>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="Out-ot-Office" />
+                                 </items>
+                              </ToolBar>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="44.0" prefWidth="498.0">
+                           <children>
+                              <ToolBar prefHeight="41.0" prefWidth="498.0">
+                                 <items>
+                                    <Label prefHeight="28.0" prefWidth="63.0" text="Location: ">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField prefHeight="25.0" prefWidth="162.0" />
+                                    <Label prefHeight="27.0" prefWidth="64.0" text="Title: ">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField prefHeight="25.0" prefWidth="143.0" />
+                                 </items>
+                              </ToolBar>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="42.0" prefWidth="498.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Label prefHeight="38.0" prefWidth="185.0" text="Select a Customer:">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </StackPane>
+                        <TableView prefHeight="133.0" prefWidth="498.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="Name" />
+                            <TableColumn prefWidth="75.0" text="Address" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <StackPane prefHeight="46.0" prefWidth="498.0">
+                           <children>
+                              <ToolBar prefHeight="44.0" prefWidth="498.0">
+                                 <items>
+                                    <Label prefHeight="24.0" prefWidth="41.0" text="Date: ">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker prefHeight="25.0" prefWidth="128.0" />
+                                    <Label prefHeight="30.0" prefWidth="61.0" text="Time: ">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox prefHeight="25.0" prefWidth="59.0" promptText="Hr." />
+                                    <Label prefHeight="17.0" prefWidth="4.0" text=":" />
+                                    <ComboBox prefHeight="25.0" prefWidth="69.0" promptText="Min." />
+                                 </items>
+                              </ToolBar>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="53.0" prefWidth="498.0">
+                           <children>
+                              <ToolBar prefHeight="69.0" prefWidth="498.0">
+                                 <items>
+                                    <Label prefHeight="36.0" prefWidth="54.0" text="Length: ">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox prefHeight="25.0" prefWidth="107.0" />
+                                    <Label prefHeight="32.0" prefWidth="41.0" text="Desc: ">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField prefHeight="25.0" prefWidth="254.0" />
+                                 </items>
+                              </ToolBar>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="56.0" prefWidth="498.0">
+                           <children>
+                              <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                                <buttons>
+                                  <Button mnemonicParsing="false" text="Save" />
+                                    <Button mnemonicParsing="false" text="Add Customer" />
+                                    <Button mnemonicParsing="false" text="Back" />
+                                </buttons>
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding>
+                              </ButtonBar>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
