@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.view.UserScheduleController">
+   <children>
+      <SplitPane dividerPositions="0.26174496644295303" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="User Schedule">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children></StackPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TableView fx:id="appointmentsTable" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="dateColumn" prefWidth="109.0" text="Date/Time" />
+                            <TableColumn fx:id="nameColumn" prefWidth="87.0" text="Customer" />
+                              <TableColumn fx:id="typeColumn" prefWidth="98.0" text="Type" />
+                              <TableColumn fx:id="locationColumn" prefWidth="93.0" text="Location" />
+                              <TableColumn fx:id="descriptionColumn" prefWidth="110.0" text="Description" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TableView>
+                        <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                          <buttons>
+                            <Button mnemonicParsing="false" onAction="#backBttnPressed" text="Back" />
+                          </buttons>
+                           <VBox.margin>
+                              <Insets right="10.0" />
+                           </VBox.margin>
+                        </ButtonBar>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

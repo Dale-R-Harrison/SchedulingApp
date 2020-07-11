@@ -22,17 +22,17 @@
                <children>
                   <ToolBar prefHeight="40.0" prefWidth="200.0">
                      <items>
-                        <RadioButton mnemonicParsing="false" text="All Appts.">
+                        <RadioButton fx:id="all" mnemonicParsing="false" onAction="#allSelected" text="All Appts.">
                            <padding>
                               <Insets left="40.0" />
                            </padding>
                         </RadioButton>
-                        <RadioButton mnemonicParsing="false" text="Appts. This Month">
+                        <RadioButton fx:id="monthly" mnemonicParsing="false" onAction="#monthlySelected" text="Appts. This Month">
                            <padding>
                               <Insets left="50.0" />
                            </padding>
                         </RadioButton>
-                        <RadioButton mnemonicParsing="false" text="Appts. This Week">
+                        <RadioButton fx:id="weekly" mnemonicParsing="false" onAction="#weeklySelected" text="Appts. This Week">
                            <padding>
                               <Insets left="50.0" />
                            </padding>
@@ -58,8 +58,8 @@
                <children>
                   <ButtonBar prefHeight="40.0" prefWidth="200.0">
                     <buttons>
-                        <Button mnemonicParsing="false" text="Update" />
-                      <Button mnemonicParsing="false" text="Delete" />
+                        <Button mnemonicParsing="false" onAction="#updateBttnPushed" text="Update" />
+                      <Button mnemonicParsing="false" onAction="#deleteBttnPushed" text="Delete" />
                         <Button mnemonicParsing="false" onAction="#backBttnPushed" text="Back" />
                     </buttons>
                      <StackPane.margin>
@@ -68,6 +68,28 @@
                   </ButtonBar>
                </children>
             </StackPane>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="80.0" text="Run Report: ">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ButtonBar buttonMinWidth="110.0" prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                      <Button mnemonicParsing="false" onAction="#typesButtonPushed" prefHeight="25.0" prefWidth="105.0" text="# of Types" />
+                        <Button mnemonicParsing="false" onAction="#scheduleBttnPushed" text="Sched. By User" />
+                        <Button mnemonicParsing="false" onAction="#numberOfCustBttnPushed" text="Customers This Month" textOverrun="CENTER_WORD_ELLIPSIS" />
+                    </buttons>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ButtonBar>
+               </children>
+            </HBox>
          </children>
       </VBox>
    </children>

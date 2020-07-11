@@ -9,7 +9,7 @@ public class User {
     private final String name;
     private final String password;
     private final int userId;
-    private final ObservableList<Appointment> appointments;
+    private ObservableList<Appointment> appointments;
 
     public String getName() {
         return this.name;
@@ -20,9 +20,7 @@ public class User {
     public int getUserId() { return this.userId; }
     public ObservableList<Appointment> getAppointments(){ return appointments; }
 
-    public void addAppointment(Appointment newAppt) {
-        appointments.add(newAppt);
-    }
+    public void setAppointments(ObservableList<Appointment>appointments) { this.appointments = appointments; };
 
     public User(String name, String password, int id) {
         this.name = name;

@@ -1,0 +1,38 @@
+Jul 11, 2020 9:04:53 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T15:04:53.535Z
+Jul 11, 2020 9:05:37 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T15:05:37.524Z
+Jul 11, 2020 9:52:36 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T15:52:36.647Z
+Jul 11, 2020 9:56:01 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T15:56:01.665Z
+Jul 11, 2020 9:58:45 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T15:58:45.134Z
+Jul 11, 2020 10:06:30 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T16:06:30.492Z
+Jul 11, 2020 10:32:49 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T16:32:49.796Z
+Jul 11, 2020 10:38:42 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T16:38:42.286Z
+Jul 11, 2020 10:48:45 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T16:48:45.573Z
+Jul 11, 2020 11:17:36 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T17:17:36.562Z
+Jul 11, 2020 11:25:10 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T17:25:10.546Z
+Jul 11, 2020 11:28:54 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T17:28:54.530Z
+Jul 11, 2020 12:54:17 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T18:54:17.620Z
+Jul 11, 2020 1:09:49 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T19:09:49.570Z
+Jul 11, 2020 1:11:59 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T19:11:59.925Z
+Jul 11, 2020 1:13:03 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T19:13:03.335Z
+Jul 11, 2020 1:31:00 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T19:31:00.839Z
+Jul 11, 2020 1:36:44 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T19:36:44.707Z
+Jul 11, 2020 1:38:28 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T19:38:28.276Z

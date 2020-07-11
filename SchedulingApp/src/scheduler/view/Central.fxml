@@ -31,15 +31,15 @@
                </children></StackPane>
             <StackPane prefHeight="59.0" prefWidth="300.0">
                <children>
-                  <Button fx:id="addAppt" mnemonicParsing="false" prefHeight="34.0" prefWidth="178.0" text="Add Appointment">
+                  <Button fx:id="addAppt" mnemonicParsing="false" onAction="#addApptButtonPressed" prefHeight="34.0" prefWidth="178.0" text="Add Appointment">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Button>
                </children></StackPane>
-            <StackPane prefHeight="65.0" prefWidth="300.0">
+            <StackPane prefHeight="52.0" prefWidth="300.0">
                <children>
-                  <Button fx:id="updateCust" mnemonicParsing="false" prefHeight="34.0" prefWidth="178.0" text="Update Customers">
+                  <Button fx:id="updateCust" mnemonicParsing="false" onAction="#addCustButtonPressed" prefHeight="35.0" prefWidth="178.0" text="Add Customers">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>

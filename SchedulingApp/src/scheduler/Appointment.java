@@ -44,4 +44,18 @@ public class Appointment {
         this.start = start;
         this.end = end;
     }
+
+    public Appointment(Customer cust, int apptId, String title, String description, String location, String contact,
+                       String type, String url, ZonedDateTime start, ZonedDateTime end) {
+        customer = cust;
+        this.apptId = apptId;
+        this.title = title;
+        this.description = description;
+        this.location = location;
+        this.contact = contact;
+        this.type = type;
+        this.url = url;
+        this.start = start;
+        this.end = end;
+    }
 }
