@@ -70,6 +70,7 @@ public class ApptUpdateController implements Initializable {
         outOfOffice.setToggleGroup(type);
 
         customerList = Database.createCustList();
+        //Business Hours are Mon-Fri from 6 AM to 5 PM. Forms are configured to only allow selection in these time frames
         hours.addAll("06", "07", "08", "09", "10", "11",
                 "12", "13", "14", "15", "16");
         minutes.addAll("00", "15", "30", "45");

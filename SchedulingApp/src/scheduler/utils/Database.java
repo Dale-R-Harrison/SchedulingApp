@@ -239,7 +239,7 @@ public class Database {
 
     public static void addOrUpdateCustomer(Customer customer) {
         int id = customer.getCustId();
-        int addressId = customer.getCustId();
+        int addressId = customer.getAddressId();
 
         String custName = "'" + customer.getName() + "'" ;
         String name = "'" + LogInController.currentUser.getName() + "'" ;
@@ -298,13 +298,13 @@ public class Database {
     }
 
     public static void deleteCustomer(int custId) {
-        String query = "DELETE FROM customer WHERE customerId = " + custId;
-
         try (Connection conn = Database.startConnection();
              Statement st = conn.createStatement()) {
-            st.execute(query);
+            st.execute("DELETE FROM appointment WHERE customerId = " + custId);
+            st.execute("DELETE FROM customer WHERE customerId = " + custId);
 
             System.out.println("Customer deleted.");
+            LogInController.currentUser.setAppointments(createApptList(LogInController.currentUser.getUserId()));
         }
         catch (SQLException e) {
             System.out.println(e.getMessage());

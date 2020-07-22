@@ -36,3 +36,21 @@ Jul 11, 2020 1:36:44 PM scheduler.view.LogInController logInButtonPressed
 INFO: test logged in at 2020-07-11T19:36:44.707Z
 Jul 11, 2020 1:38:28 PM scheduler.view.LogInController logInButtonPressed
 INFO: test logged in at 2020-07-11T19:38:28.276Z
+Jul 11, 2020 1:54:53 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T19:54:53.622Z
+Jul 11, 2020 1:57:19 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-11T19:57:19.411Z
+Jul 13, 2020 12:05:55 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-13T18:05:55.340Z
+Jul 13, 2020 12:07:50 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-13T18:07:50.260Z
+Jul 13, 2020 12:09:06 PM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-13T18:09:06.326Z
+Jul 12, 2020 4:21:51 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-12T10:21:51.662Z
+Jul 12, 2020 4:56:26 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-12T10:56:26.108Z
+Jul 12, 2020 4:59:56 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-12T10:59:56.006Z
+Jul 12, 2020 5:03:46 AM scheduler.view.LogInController logInButtonPressed
+INFO: test logged in at 2020-07-12T11:03:46.080Z

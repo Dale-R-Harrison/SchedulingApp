@@ -130,6 +130,7 @@ public class LogInController implements Initializable {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Meeting Reminder");
                 alert.setContentText("Reminder! You have a meeting scheduled for " + time);
+                alert.showAndWait();
             }
         });
     }
